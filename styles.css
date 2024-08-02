@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    color:#415778;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(175,210,255,0.7);
+    /*background: linear-gradient(to right, rgb(163,223,255,0.7), rgb(175,210,255,0.7));/*#AFD2FF=rgb(175,210,255) and #A3DFFF=rgb(163,223,255)*/
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.header-container {
+    color:#415778;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: rgb(175,210,255,0.7);;
+    padding: 0 20px;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-right nav ul li {
+    display: inline;
+}
+
+.header-right nav ul li a {
+    color:#415778;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.header-right nav ul li a:hover {
+    color:#415778;
+}
+main {
+    font-size: 50px;
+    flex: 1;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+main h1{
+    color:#415778;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+.slide {
+    position: relative;
+    top: -100vh;
+    opacity: 0;
+    transition: top 2s, opacity 2s;
+}
+
+.slide-in {
+    top:-450px;
+    opacity: 1;
+}
+
+.experience-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10; /* Ensure the button is on top */
+    text-align: center; /* Ensure the button is on top */
+}
+
